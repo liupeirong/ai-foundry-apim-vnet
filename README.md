@@ -8,8 +8,8 @@
 
 ![Network diagram](images/apim_foundry_network.png)
 
-> There's nothing restricting the incoming traffic to the Foundry private endpoints,
-even though ideally all calls to the model endpoint should go through APIM. 
+> There's nothing restricting the incoming traffic to the AI Foundry private endpoints,
+even though ideally all calls to the model endpoints should go through APIM. 
 Private endpoints subnet NSG is disabled. To limit inbound traffic to private
 endpoints, use Azure Firewall or limit private DNS resolution of the endpoints to
 only certain vnets.
@@ -29,7 +29,7 @@ or programmatically by running `az apim api create ...`.
 ### From outside the VNET
 
 > Note: The isolated network controls traffic in the data plane, not management plane.
-The portal features such as view the Foundry projects or managing APIM APIs should still work.
+The portal features such as viewing the Foundry projects or managing APIM APIs should still work.
 
 1. AI Foundry portal "playground" feature should not work.
 1. APIM API portal "test" feature should not work.
